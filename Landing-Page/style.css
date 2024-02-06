@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(180deg, rgb(255, 211, 128),rgb(255, 109, 255),rgb(102, 102, 255));
+    height: 100%;
+}
+
+header{
+    display: block;
+    padding: 30px 60px;
+}
+
+header a{
+    text-decoration: none;
+    font-size: large;
+    margin-right: 1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header a:hover{
+    border-bottom: 1px solid blueviolet;
+}
+
+.one{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    /* background-color: aqua; */
+    height: auto;
+    /* padding: 20px 50px; */
+}
+
+.left{
+    color: rgb(61, 12, 108);
+    width: 50vh;
+}
+
+.left .image1{
+    width: auto;
+    
+}
+
+
+.right{
+    width: 50vh;
+    /* padding:  5% 10%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: rgb(61, 12, 108);
+}
+
+.right h1{
+    color: rgb(40, 7, 70);
+}
+
+.book{
+    display: flex;
+    background-color: aliceblue;
+    width: 400px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.book input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(76, 46, 104);
+    color: white;
+}
+
+.book input::placeholder{
+    color: gray;
+}
+
+.book button{
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.right img{
+    width: 100%;
+}
+
+.two{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap-reverse;
+}
+
+.two .t-left{
+    width: 50vh;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: rgb(61, 12, 108);
+}
+.t-left h1{
+    color: rgb(40, 7, 70);
+}
+.two .t-right{
+    width: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.t-right img{
+    height: 35em;
+}
+
+h4{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.profile{
+    display: flex;
+    gap: 10px;
+}
+
+.profile p{
+    font-size: small; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-style:normal;
+}
+
+.profile img{
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+}
+
+
+.author{
+    height:300px;
+    width: 400px;
+    aspect-ratio: 3/2;
+    border-radius: 20px;
+}
+
+.three{
+    margin-top: 10%;
+    padding: 50px;
+    background-color: rgba(214, 254, 255, 0.214);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
+
+.card{
+    width: 50vw;
+}
+
+.card h1{
+    color: rgb(40, 7, 70);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card p{
+    color: rgb(61, 12, 108);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:italic;
+}
+
+.back{
+    text-decoration: none;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(240, 248, 255, 0.267);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer{
+    position:static;
+    bottom: 0;
+    background-color: rgba(238, 130, 238, 0.412);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

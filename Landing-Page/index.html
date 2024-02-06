@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#whats-inside">Whats Inside</a>
+        <a href="#author">Author</a>
+        <a href="#" id="printLink">Download</a>
+    </header>
+    
+    <section class="one">
+        <div class="left">
+            <img src="images/mobile.png" alt="" class="image1">
+        </div>
+        <div class="right">
+            <h1>Success starts with a great design book</h1>
+            <p>
+                Morbi leo tortor, fermentum sed orci vitae, tempor auctor turpis. Fusce bibendum accumsan fringilla. Nulla aliquam luctus sem, at posuere nibh lobortis et. Ut ac mollis risus, eu congue libero. Nulla vestibulum ultricies tortor at ultrices.
+            </p>
+            <p>
+                Available in these formats. Enter your email and we will send you the book.
+            </p>
+
+            <div class="book">
+                <input type="text" placeholder="Your Email Address">
+                <button>Get The Book!</button>
+            </div>
+            <img src="images/logos.png" alt="logos">
+        </div>
+    </section>
+
+    <section class="two" id="whats-inside">
+        <div class="t-left">
+            <h1>Whats Inside</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur aperiam ea beatae veritatis modi nemo atque ab cupiditate reiciendis omnis, quam hic magni consequatur iusto maiores doloremque possimus soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo illo dolorem magnam exercitationem obcaecati magni. Tempora in delectus nam expedita at. Ipsa eveniet odit natus tenetur deleniti ratione praesentium.
+            </p>
+        </div>
+        <div class="t-right">
+            <img src="images/book.png" alt="">
+        </div>
+    </section>
+    <br><br>
+    <h4>DON'T JUST TAKE OUR WORD FROM IT</h4>
+
+    <section class="two">
+        <div class="left">
+            <p style="font-style:italic; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                The great design book powers our creative process and allows us to iterate on ideas for digital campaigns.
+            </p>
+            <div class="profile">
+                <img src="images/prof1.png" alt="">
+                <p>
+                    MIKE BUTTON
+                    <br>
+                    Art Director, Pixel & Nudge                    
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <p style="font-style:italic;">
+                The great design book powers our creative process and allows us to iterate on ideas for digital campaigns.
+            </p>
+            <div class="profile">
+                <img src="images/prof2.png" alt="">
+                <p>
+                    JANE CLICK
+                    <br>
+                    Digital Marketer, ConvertableMetrics           
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="three" id="author">
+        <div class="author-img">
+            <img src="images/author.jpg" alt="" class="author">
+        </div>
+            <div class="card">
+            <h1>About The Author</h1>
+            <p>
+                Morbi egestas ultricies est. Proin eu odio nibh. Praesent venenatis mi vitae pharetra porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed dolor pulvinar, dapibus augue non, tincidunt nibh. Curabitur et elit commodo, dictum diam sed, dapibus enim. Integer et pulvinar leo, condimentum maximus diam. Phasellus imperdiet urna in tortor vestibulum porta eget ac metus.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; Mohammad Safi Maz</p>
+        <a href="#" class="back">Back To Top ^</a>
+    </footer>
+
+    <script>
+        function printPage() {
+          window.print();
+        }
+    
+        document.getElementById('printLink').addEventListener('click', function(event) {
+          event.preventDefault(); 
+          printPage();
+        });
+      </script>
+
+
+
+</body>
+</html>
