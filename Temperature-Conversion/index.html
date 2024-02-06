@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp-Convert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temprature - Convertion</h1><br>
+        <hr><br>
+        
+        
+            <div class="temp-inputs">
+                <label for="degreeInput">Degree</label>
+                <input type="number" name="degrees" id="degreeInput">
+            </div>
+            <div class="types">
+                <div class="temp-types">
+                    <label for="fah">Celsius-Fahrenheit</label><br>
+                    <input type="radio" name="conversionType" id="fah" value="fahrenheit">
+                </div>
+                <div class="temp-types">
+                    <label for="cel">Fahrenheit-Celsius</label><br>
+                    <input type="radio" name="conversionType" id="cel" value="celsius">
+                </div>
+            </div>
+            
+            
+            <button class="submit" onclick="convert()">C O N V E R T</button>
+            
+            <div class="result-output">
+                <label for="result" id="res-label">Result</label>
+                <input type="text" name="result" id="result" readonly>
+            </div>
+            
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
