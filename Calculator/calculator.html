@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        background-color:rgb(61, 61, 69);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #calc{
+        background-color:honeydew;
+        height: auto;
+        width: auto;
+        padding: 20px;
+        border-radius: 1em;
+    }
+    input{
+        width: 100%;
+        padding: 30px 20px;
+        font-size: 4em;
+        margin-bottom: 10px;
+        outline: none;
+        text-align: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(121, 107, 206);
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+    }
+
+    input::placeholder{
+        color: rgb(177, 187, 196);
+        text-align: center;
+        /*color: darkolivegreen; */
+    }
+    
+    button{
+        border-radius: 1em;
+        border: 1px solid gray;
+        height: 100%;
+        width: 100%;
+        padding: 20px; 
+        font-size: 1.5em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    button:hover{
+        cursor: pointer;
+        box-shadow: 1px 3px 2px 1px black;
+    }
+    button:active{
+        cursor: pointer;
+        box-shadow: 0px 0px 2px 1px black;
+    }
+    #buttons{
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        gap: 10px;
+    }
+    #operator{
+        background-color: lightgreen;
+    }
+
+    #clear{
+        background-color: gold;
+    }
+    #equals{
+        background-color:teal;
+        color: white;
+    }
+</style>
+<body>
+    <div id="calc">
+        <input type="text" name="result" id="result" readonly placeholder="CALCULATOR">
+    <div id="buttons">
+        <button onclick="addDigit('+')" id="operator">ADD</button>
+        <button onclick="addDigit('-')" id="operator">SUB</button>
+        <button onclick="addDigit('*')" id="operator">MUL</button>
+        <button onclick="addDigit('/')" id="operator">DIV</button>
+        
+        <button onclick="addDigit('1')">1</button>
+        <button onclick="addDigit('2')">2</button>
+        <button onclick="addDigit('3')">3</button>
+        <button onclick="addDigit('4')">4</button>
+        <button onclick="addDigit('5')">5</button>
+        <button onclick="addDigit('6')">6</button>
+        <button onclick="addDigit('7')">7</button>
+        <button onclick="addDigit('8')">8</button>
+        <button onclick="addDigit('9')">9</button>
+        <button onclick="addDigit('0')">0</button>
+        
+        <button onclick="del()" id="clear">AC</button>
+        <button onclick="equals()" id="equals">DONE</button>
+
+        <button onclick="bgcolor('black')">Black</button>
+        <button onclick="bgcolor('sandybrown')">Sand</button>
+        <button onclick="bgcolor('lightblue')">Blue</button>
+        <button onclick="bgcolor('pink')">Pink</button>
+    </div>
+
+    </div>
+
+    <script>
+
+        let result = document.getElementById('result')
+
+        //console.log(result) -->
+        let calcBg = document.getElementById('calc')
+    
+        function bgcolor(color){
+            calcBg.style.backgroundColor= color;
+        }
+
+
+
+        function addDigit(n){
+            result.value  += n
+        }
+
+        function del() {
+            result.value = ''
+            
+        }
+
+        function equals(){
+            try{
+                result.value = 'ANS : ' + eval(result.value)
+            }catch(e){ 
+                result.value= 'ERROR Try Again'
+            }
+        }
+    </script>
+
+
+</body>
+</html>
